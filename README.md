@@ -90,6 +90,9 @@ Klassen mit Feldern ohne Funktionalität
 - Scripting Runtime Version: .NET 4.x Equivalent
 - API Compatibility Level: .NET 2.0
 
+## Testcase
+Play drücken, über drei Hindernisse springen, gegen das vierte laufen, restart.
+
 ## Copyright Game
 
 SantaRun by smeerws
