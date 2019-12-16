@@ -36,12 +36,12 @@ mit einer beschreibenden commit message speichern.
 
 ## Welche Prinzipien gibt es?
 
-DRY - Mehrfache Nennungen von Code verhindern, also mit Variablen arbeiten
-KISS - Der Code soll so einfach wie möglich gestaltet werden
-YAGNI - "Extras", die nicht unbedingt für die Funktion des Programms nötig sind, sollen entfernt werden
-Principle of Least Surprise - Die Funktionen sollten so sein, wie man es sich erwartet
-SoC - Der Code sollte in klare Abschnitte gegliedert sein
-Single Responsibility Principle - Klassen sollten nur für eine Sache zuständig sein und nicht mehrere Funktionen erfüllen
+- DRY - Mehrfache Nennungen von Code verhindern, also mit Variablen arbeiten
+- KISS - Der Code soll so einfach wie möglich gestaltet werden
+- YAGNI - "Extras", die nicht unbedingt für die Funktion des Programms nötig sind, sollen entfernt werden
+- Principle of Least Surprise - Die Funktionen sollten so sein, wie man es sich erwartet
+- SoC - Der Code sollte in klare Abschnitte gegliedert sein
+- Single Responsibility Principle - Klassen sollten nur für eine Sache zuständig sein und nicht mehrere Funktionen erfüllen
 
 ## Was ist ein Code Smell?
 
