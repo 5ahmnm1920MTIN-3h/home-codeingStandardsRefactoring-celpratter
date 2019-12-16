@@ -2,8 +2,9 @@
 
 public class PlayerController : MonoBehaviour
 {
+    // init variables
     Rigidbody2D rb;
-    Animator anim, anim2, anim3, anim4, anim5;
+    Animator anim;
     bool grounded;
     bool gameOver = false;
     private string triggerJump = "Jump";
