@@ -1,15 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-
     public static GameManager instance;
     public GameObject gameOverPanel;
     public Text scoreText;
+    private string mainScene = "MainScene";
+    private string menuScene = "MenuScene";
     string defaultText;
     int score = 0;
 
@@ -20,19 +19,6 @@ public class GameManager : MonoBehaviour
             instance = this;
         }
     }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        Debug.Log("in Start");   
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Debug.Log("in Update");
-    }
-
     public void GameOver()
     {
         ObstacleSpawner.instance.gameOver = true;
@@ -53,12 +39,12 @@ public class GameManager : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene(mainScene);
     }
 
     public void Menu()
     {
-        SceneManager.LoadScene("MenuScene");
+        SceneManager.LoadScene(menuScene);
     }
 
     public void IncrementScore()
