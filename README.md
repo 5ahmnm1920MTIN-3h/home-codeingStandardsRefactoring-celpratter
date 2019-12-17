@@ -125,7 +125,7 @@ Verschachtelungen, die den Code unlesbar machen
 ### Datenklasse
 Klassen mit Feldern ohne Funktionalität
 
-(Idee die Beispiele so einzubinden ist von kkoenig)
+*(Idee die Beispiele so einzubinden ist von kkoenig)*
 
 # README
 
