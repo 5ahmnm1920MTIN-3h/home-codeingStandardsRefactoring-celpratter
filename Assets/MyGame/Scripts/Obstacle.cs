@@ -17,7 +17,7 @@ public class Obstacle : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        //if obstacle's position x is < -15f it will be destroyed
+        //if obstacle's position x is < 15f it will be destroyed
         if (transform.position.x > rightBoundary)
         {
             Destroy(gameObject);
