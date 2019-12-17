@@ -32,7 +32,6 @@ public class GameManager : MonoBehaviour
         foreach (TextureScroll item in scrollingObjects)
         {
             item.scroll = false;
-            Debug.Log(item.name);
         }
     }
 
@@ -40,6 +39,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(mainScene);
     }
+
 
     public void Menu()
     {
