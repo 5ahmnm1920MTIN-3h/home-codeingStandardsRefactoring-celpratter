@@ -63,11 +63,41 @@ Animator anim;
 ### Nichtssagende Namen
 Sowohl Variablen, als auch Klassen sollten so benannt werden, dass man davon die Funktion ablesen kann
 
+```c#
+private string baumschuleABCD;
+```
+
 ### Doppelter Code
 Ein Code kommt zwei mal vor
 
+```c#
+public void Restart()
+    {
+        SceneManager.LoadScene(mainScene);
+    }
+public void Resume()
+    {
+        SceneManager.LoadScene(mainScene);
+    }
+```
+
 ### Lange Methode
 Eine Methode ist zu lang.
+
+```c#
+public void SetResult()
+    {
+        float a = float.Parse(ipVarA.text);
+        float b = float.Parse(ipVarB.text);
+	float c = float.Parse(ipVarC.text);
+	float d = float.Parse(ipVarD.text);
+        result.text = NumbersAdd(a, b).ToString();
+        ipVarA.interactable = false;
+        ipVarB.interactable = false;
+        btn_add.interactable = false;
+        btn_reset.interactable = true;
+    }
+```
 
 ### Große Klasse
 Zu viele Variablen und generell zu umfangreich
@@ -75,8 +105,16 @@ Zu viele Variablen und generell zu umfangreich
 ### Kurze Namen
 Einzelne Buchstaben, anstatt beschreibender Name
 
+```c#
+private string a = "Baumschule";
+```
+
 ### Lange Namen
 Variablen oder Klassen haben viel zu lange Namen
+
+```c#
+private float ThisIsMyNewVariableForTheNeededFloatValue = 2;
+```
 
 ### Ausgeschlagenes Erbe
 Unterklassen erben Methoden und Daten, die sie gar nicht brauchen
