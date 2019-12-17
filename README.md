@@ -52,6 +52,13 @@ Teile im Code, die man aufgrund der Struktur ändern sollte - nicht weil es ein 
 ### Kommentare
 Kommentare sollen eine Stütze sein - zu viele sinnlose Kommentare sind überflüssig
 
+````c#
+// init rigidbody
+Rigidbody2D rb;
+// init animator
+Animator anim;
+```
+
 ### Nichtssagende Namen
 Sowohl Variablen, als auch Klassen sollten so benannt werden, dass man davon die Funktion ablesen kann
 
