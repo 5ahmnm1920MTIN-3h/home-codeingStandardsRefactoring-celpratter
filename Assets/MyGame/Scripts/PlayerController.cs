@@ -3,22 +3,22 @@
 public class PlayerController : MonoBehaviour
 {
     // init variables
-    Rigidbody2D rb;
-    Animator anim;
-    bool grounded;
-    bool gameOver = false;
+    private Rigidbody2D rb;
+    private Animator anim;
+    private bool grounded;
+    private bool gameOver = false;
     private string triggerJump = "Jump";
     private string groundTag = "Ground";
     private string obstacleTag = "Obstacle";
     private string animDeath = "SantaDeath";
-    [SerializeField] float jumpForce;
+    [SerializeField] private float jumpForce;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (Input.GetMouseButton(0) && !gameOver && !gameOver && !gameOver)
         {
@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-    void Jump()
+    private void Jump()
     {
         grounded = false;
         rb.velocity = Vector2.up * jumpForce;

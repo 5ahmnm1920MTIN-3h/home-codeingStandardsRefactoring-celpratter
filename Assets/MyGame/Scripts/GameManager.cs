@@ -9,12 +9,11 @@ public class GameManager : MonoBehaviour
     public Text scoreText;
     private string mainScene = "MainScene";
     private string menuScene = "MenuScene";
-    string defaultText;
-    int score = 0;
+    private int score = 0;
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
         }
@@ -26,11 +25,11 @@ public class GameManager : MonoBehaviour
         gameOverPanel.SetActive(true);
     }
 
-    void StopScrolling()
+    private void StopScrolling()
     {
         TextureScroll[] scrollingObjects = FindObjectsOfType<TextureScroll>();
 
-        foreach(TextureScroll item in scrollingObjects)
+        foreach (TextureScroll item in scrollingObjects)
         {
             item.scroll = false;
             Debug.Log(item.name);
